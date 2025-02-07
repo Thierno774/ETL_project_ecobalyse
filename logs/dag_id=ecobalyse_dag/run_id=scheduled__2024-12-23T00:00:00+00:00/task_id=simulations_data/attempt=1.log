@@ -1,0 +1,37 @@
+[2025-02-07T08:00:37.999+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-07T08:00:38.012+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ecobalyse_dag.simulations_data scheduled__2024-12-23T00:00:00+00:00 [queued]>
+[2025-02-07T08:00:38.019+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ecobalyse_dag.simulations_data scheduled__2024-12-23T00:00:00+00:00 [queued]>
+[2025-02-07T08:00:38.019+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 3
+[2025-02-07T08:00:38.030+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): simulations_data> on 2024-12-23 00:00:00+00:00
+[2025-02-07T08:00:38.039+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=129) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-07T08:00:38.040+0000] {standard_task_runner.py:72} INFO - Started process 175 to run task
+[2025-02-07T08:00:38.042+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'ecobalyse_dag', 'simulations_data', 'scheduled__2024-12-23T00:00:00+00:00', '--job-id', '1565', '--raw', '--subdir', 'DAGS_FOLDER/data_transformations.py', '--cfg-path', '/tmp/tmp31vgnjdq']
+[2025-02-07T08:00:38.042+0000] {standard_task_runner.py:105} INFO - Job 1565: Subtask simulations_data
+[2025-02-07T08:00:38.087+0000] {task_command.py:467} INFO - Running <TaskInstance: ecobalyse_dag.simulations_data scheduled__2024-12-23T00:00:00+00:00 [running]> on host 2ca7aeda0036
+[2025-02-07T08:00:38.165+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='thiernosidybah232@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ecobalyse_dag' AIRFLOW_CTX_TASK_ID='simulations_data' AIRFLOW_CTX_EXECUTION_DATE='2024-12-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-23T00:00:00+00:00'
+[2025-02-07T08:00:38.166+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-02-07T08:00:38.166+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-02-07T08:00:38.166+0000] {logging_mixin.py:190} INFO - Current task name:simulations_data state:running start_date:2025-02-07 08:00:38.012904+00:00
+[2025-02-07T08:00:38.166+0000] {logging_mixin.py:190} INFO - Dag name:ecobalyse_dag and current dag run status:running
+[2025-02-07T08:00:38.167+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-07T08:00:53.357+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 44.81 secondes.
+[2025-02-07T08:01:52.950+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 45.22 secondes.
+[2025-02-07T08:02:53.828+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 44.34 secondes.
+[2025-02-07T08:03:52.403+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 45.77 secondes.
+[2025-02-07T08:04:51.651+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 46.52 secondes.
+[2025-02-07T08:05:53.282+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 44.89 secondes.
+[2025-02-07T08:06:57.865+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 40.31 secondes.
+[2025-02-07T08:07:52.882+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 45.29 secondes.
+[2025-02-07T08:08:52.853+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 45.32 secondes.
+[2025-02-07T08:09:52.235+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 45.94 secondes.
+[2025-02-07T08:10:52.069+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 46.11 secondes.
+[2025-02-07T08:11:52.148+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 46.03 secondes.
+[2025-02-07T08:12:51.862+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 46.31 secondes.
+[2025-02-07T08:13:51.576+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 46.60 secondes.
+[2025-02-07T08:14:56.031+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 42.15 secondes.
+[2025-02-07T08:15:53.148+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 45.03 secondes.
+[2025-02-07T08:16:52.759+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 45.42 secondes.
+[2025-02-07T08:17:53.003+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 45.18 secondes.
+[2025-02-07T08:18:52.686+0000] {logging_mixin.py:190} INFO - Limite atteinte, attente de 45.50 secondes.
